@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import CartWigdet from "./CartWigdet";
+
+
 
 function NavBar() {
   return (
@@ -6,7 +9,7 @@ function NavBar() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Navbar
+            Compras.com
           </a>
           <button
             className="navbar-toggler"
@@ -23,21 +26,17 @@ function NavBar() {
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
                 <a className="nav-link active" href="#">
-                  Home
+                  Incio
                   <span className="visually-hidden">(current)</span>
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Features
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Pricing
+                  Productos
                 </a>
               </li>
             </ul>
+            <CartWigdet/>
             <form className="d-flex">
               <input
                 className="form-control me-sm-2"
@@ -45,12 +44,13 @@ function NavBar() {
                 placeholder="Search"
               />
               <button className="btn btn-secondary my-2 my-sm-0" type="submit">
-                Search
+                Buscar
               </button>
             </form>
           </div>
         </div>
       </nav>
+      
     </>
   );
 }
