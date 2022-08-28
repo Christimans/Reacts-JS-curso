@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import CartWigdet from "./CartWigdet";
+import {ItemListContainer} from "./itemListContainer";
+
 
 
 
@@ -37,6 +39,7 @@ function NavBar() {
               </li>
             </ul>
             <CartWigdet/>
+            <ItemListContainer numero = '4' />
             <form className="d-flex">
               <input
                 className="form-control me-sm-2"
@@ -50,9 +53,9 @@ function NavBar() {
           </div>
         </div>
       </nav>
-      
     </>
   );
 }
 
 export default NavBar;
+
