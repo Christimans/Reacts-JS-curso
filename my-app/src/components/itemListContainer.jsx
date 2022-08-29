@@ -1,10 +1,16 @@
 import React from "react";
+import ItemCount from "./ItemCount";
 
-export function ItemListContainer ({numero}) {
+
+export function ItemListContainer () {
+    function onAdd(count){
+        alert(`Se ha seleccionado ${count} productos`)
+    }
     return ( 
         <>
-        <h1 style={{fontSize: '2em', color: 'white', marginRight: '1em', }}>{numero}</h1>
+        <ItemCount stock={10} onAdd = {onAdd}/>
         </>
+
      );
 }
 
