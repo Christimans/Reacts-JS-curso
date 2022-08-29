@@ -1,6 +1,7 @@
 import './App.css';
-import ItemCount from './ItemCount';
+import { ItemListContainer } from './itemListContainer';
 import NavBar from './NavBar';
+
 
 
 
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
     <NavBar/>
+    <ItemListContainer/>
     </>
   );
 }

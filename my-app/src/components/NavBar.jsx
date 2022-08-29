@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import CartWigdet from "./CartWigdet";
-import {ItemListContainer} from "./itemListContainer";
 
 function NavBar() {
   return (
@@ -49,7 +48,6 @@ function NavBar() {
           </div>
         </div>
       </nav>
-      <ItemListContainer/>
     </>
   );
 }
